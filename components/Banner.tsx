@@ -1,12 +1,10 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Users, Calculator, ArrowRight } from "lucide-react";
-import { useRouter } from "next/navigation";
 import { SignUpButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 
 export default function Banner() {
-  const router = useRouter();
   const { isSignedIn } = useUser();
 
   return (

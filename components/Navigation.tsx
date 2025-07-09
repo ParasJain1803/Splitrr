@@ -1,7 +1,6 @@
 import React from "react";
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
-import { Diamond } from "lucide-react";
 
 export default function Navigation() {
   return (
