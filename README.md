@@ -1,8 +1,8 @@
-# Split - Easily split expenses with friends and groups (A Splitwise Clone)
+# Splitrr - Easily split expenses with friends and groups (A Splitwise Clone)
 
-Built with Next.js 14 App Router, Clerk for Authentication, React, NeonDb for database management, ShadCN UI library for components, TypeScript, and TailwindCSS. Utilizing Cursor AI, Claude AI and Galileo AI.
+Built with Next.js 14 App Router, Clerk for Authentication, React, NeonDb for database management, ShadCN UI library for components, TypeScript, and TailwindCSS. Utilizing Cursor AI, Claude AI and Stitch AI.
 
-![Project Image](https://splitai.vercel.app/og-image.png)
+<!-- ![Project Image] -->
 
 ## Features
 
@@ -36,7 +36,7 @@ To get started with this project, follow these steps:
 1. Click the "Fork" button in the top right corner of this GitHub repository to create a copy in your account.
 2. Clone your forked repository to your local machine using:
    ```
-   git clone https://github.com/kulkarniankita/split-app.git
+   git clone https://github.com/ParasJain1803/Splitrr.git
    ```
 3. Navigate to the project directory:
    ```
