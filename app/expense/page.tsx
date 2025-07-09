@@ -14,6 +14,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useOrganization, useOrganizationList, useUser } from "@clerk/nextjs";
 import React, { useEffect, useState } from "react";
 import { addExpense } from "../actions";
+import { redirect } from "next/navigation";
 
 // ... (rest of the code remains unchanged)
 
@@ -138,6 +139,7 @@ export default function AddExpense() {
         setGroup("");
         setSplitPercentage("");
         setSplitWith([]);
+        redirect(`/group`);
       } else {
         throw new Error("Failed to add expense");
       }
@@ -152,7 +154,7 @@ export default function AddExpense() {
   };
 
   if (!isUserLoaded || !isOrgListLoaded || !isOrgLoaded) {
-    return <div>Loading...</div>;
+    return <div className="bg-emerald-900">Loading...</div>;
   }
 
   return (
@@ -174,7 +176,7 @@ export default function AddExpense() {
             <Input
               id="amount"
               type="number"
-              placeholder="$0.00"
+              placeholder="₹0.00"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
               required
