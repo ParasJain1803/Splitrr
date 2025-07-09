@@ -7,11 +7,7 @@ import Link from "next/link";
 
 export default function Banner() {
   const router = useRouter();
-  const { isSignedIn } = useUser ? useUser() : { isSignedIn: false };
-
-  const handleGoToDashboard = () => {
-    router.push("/dashboard");
-  };
+  const { isSignedIn } = useUser();
 
   return (
     <section className="relative overflow-hidden">

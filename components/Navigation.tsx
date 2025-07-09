@@ -1,6 +1,7 @@
 import React from "react";
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
+import { Diamond } from "lucide-react";
 
 export default function Navigation() {
   return (
@@ -18,7 +19,7 @@ export default function Navigation() {
             >
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
             </svg>
-            <span className="text-2xl font-bold text-white">Split</span>
+            <span className="text-3xl font-bold text-white">Splitrr</span>
           </Link>
 
           <div className="flex items-center space-x-12">

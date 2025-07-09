@@ -1,10 +1,18 @@
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
-import { Montserrat } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Split",
@@ -19,7 +27,9 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={montserrat.className}>
+        <body
+          className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
+        >
           <Navigation />
           {children}
           <Toaster />

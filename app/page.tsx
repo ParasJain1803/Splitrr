@@ -17,7 +17,7 @@ export default function LandingPage() {
             <h2 className="text-4xl font-bold text-white">Why Splitrr?</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Splitrr is the easiest way to split bills with friends and family.
-              We're trusted by millions of people around the world.
+              We&apos;re trusted by millions of people around the world.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
